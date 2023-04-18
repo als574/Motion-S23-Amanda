@@ -1,65 +1,77 @@
-#hero{
+#hero{ 
     height: 90vh;
     width:100%;
-    
-
+    overflow: hidden;
+    font-family: "Open Sans", sans-serif;
+    }
+   
     @include xl{
-        display:grid;
-        grid-template-areas: ". hero .";
-        grid-template-columns: auto 1440px auto;
-
+    /*display:grid; 
+    grid-template-areas: ". content .";
+    grid-template-columns: auto 1440px auto; */
+   // justify-content: center;
     }
-
-    >div{
+    
+   >div{
         overflow: hidden;
-        height:100%;
+        height: 100%; 
+    @include xl{
+    grid-area: hero;
+    }
+ }
 
-        @include xl{
-            grid-area: hero;
-        }
+article{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    //height:100%;
+    width: 200%;
+    //fix cropping or width of hero img
+    background-image: url("../img/hero415.png");
+    background-position: center;
+    background-size:cover;
+//get rid of background on button
+     .button{
+        border: none;
+        background: none;
     }
 
-    article{
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        height:100%;
-        background-image: url('../img/hero415.png');
-        background-position: center;
-        background-size: cover;
-
-        #hero-content{
-           // color:var(--white);
-            text-align: center;
-
-            h1{
-                font-size: rem-calc(80);
-                font-weight: 700;
-                line-height: 117px;
-                margin: 0;
-                @include md{
-                    font-size: rem-cal(90);
-                }
-                @include lg{
-                    font-size: rem-cal(100);
-                }
-            }
-
-            h2{
-                font-size: rem-calc(32);
-                font-weight: 400;
-                line-height: 47px;
-                margin-top: -25px;
-
-                @include md{
-                    font-size: rem-cal(40);
-                    margin-top: -20px;
-                }
-                @include lg{
-                    font-size: rem-cal(40);
-                    margin-top: -15px;
-                }
-            }
-
-        }
+ #hero-content{
+    color: #ffff;
+    text-align: center;
+    
+    h1{
+    font-size: rem-calc(80);
+    font-weight: 700;
+    line-height: 117px;
+    
+    @include md{
+    font-size: rem-calc(90);
     }
+    @include lg{
+    font-size: rem-calc(100);
+    }
+    
+    }
+}
+    
+    
+    h2.shopnow{
+    font-size: rem-calc(32);
+    font-weight: 400;
+    line-height: 47px;
+    margin-top: -25px;
+    
+    
+    @include md{
+    Font-size: rem-calc(40);
+    margin-top: -20px;
+    }
+    
+    
+    @include lg{
+    font-size: rem-calc(40);
+    
+    }
+} 
+ }
