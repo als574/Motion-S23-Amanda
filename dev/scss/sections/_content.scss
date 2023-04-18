@@ -6,19 +6,19 @@
     white-space: nowrap;
     font-family: "Open Sans", sans-serif;
 
-    @include md{
+    @include sm{
         padding: 100px 0;
         grid-template-columns: auto 80% auto;
     }
-   /* @include md{
+   @include md{
         padding: 128px 0;
         grid-template-columns: auto 80% auto;
     }
-    @include md{
+    @include lg{
         grid-template-columns: auto 1440px auto;
     }
-*/
-}
+
+
 
 div{
     grid-area: content;
@@ -36,3 +36,5 @@ div{
     -moz-text-fill-color: transparent;
         }
     }
+}
+

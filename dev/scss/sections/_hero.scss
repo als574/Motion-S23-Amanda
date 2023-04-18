@@ -3,15 +3,18 @@
     width:100%;
     overflow: hidden;
     font-family: "Open Sans", sans-serif;
+    #shopnowbtn{
+        border: none;
+        background: none;
+    }
     }
    
-    @include xl{
-    /*display:grid; 
+   /* @include xl{
+    display:grid; 
     grid-template-areas: ". content .";
-    grid-template-columns: auto 1440px auto; */
-   // justify-content: center;
-    }
-    
+    grid-template-columns: auto 1440px auto; 
+    justify-content: center;
+    */
    >div{
         overflow: hidden;
         height: 100%; 
@@ -24,17 +27,13 @@ article{
     display:flex;
     justify-content: center;
     align-items: center;
-    //height:100%;
-    width: 200%;
+    height:90vh;
+    width: 100%;
     //fix cropping or width of hero img
     background-image: url("../img/hero415.png");
     background-position: center;
     background-size:cover;
-//get rid of background on button
-     .button{
-        border: none;
-        background: none;
-    }
+    
 
  #hero-content{
     color: #ffff;
@@ -65,7 +64,7 @@ article{
     
     @include md{
     Font-size: rem-calc(40);
-    margin-top: -20px;
+   margin-top: -20px;
     }
     
     
@@ -75,3 +74,7 @@ article{
     }
 } 
  }
+
+    
+    
+   

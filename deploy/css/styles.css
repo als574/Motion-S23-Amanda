@@ -402,6 +402,7 @@ header > div aside a {
 header button {
   border: none;
   background-color: #5D1676;
+  border-radius: 8px;
 }
 
 /* =============
@@ -413,12 +414,17 @@ header button {
   overflow: hidden;
   font-family: "Open Sans", sans-serif;
 }
-
-@media (min-width: 1200px) {
-  /*display:grid; 
-  grid-template-areas: ". content .";
-  grid-template-columns: auto 1440px auto; */
+#hero #shopnowbtn {
+  border: none;
+  background: none;
 }
+
+/* @include xl{
+ display:grid; 
+ grid-template-areas: ". content .";
+ grid-template-columns: auto 1440px auto; 
+ justify-content: center;
+ */
 > div {
   overflow: hidden;
   height: 100%;
@@ -433,14 +439,11 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200%;
+  height: 90vh;
+  width: 100%;
   background-image: url("../img/hero415.png");
   background-position: center;
   background-size: cover;
-}
-article .button {
-  border: none;
-  background: none;
 }
 article #hero-content {
   color: white;
@@ -486,31 +489,33 @@ article h2.shopnow {
   padding: 64px 0;
   white-space: nowrap;
   font-family: "Open Sans", sans-serif;
-  /* @include md{
-          padding: 128px 0;
-          grid-template-columns: auto 80% auto;
-      }
-      @include md{
-          grid-template-columns: auto 1440px auto;
-      }
-  */
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   #content {
     padding: 100px 0;
     grid-template-columns: auto 80% auto;
   }
 }
-
-div {
+@media (min-width: 768px) {
+  #content {
+    padding: 128px 0;
+    grid-template-columns: auto 80% auto;
+  }
+}
+@media (min-width: 1024px) {
+  #content {
+    grid-template-columns: auto 1440px auto;
+  }
+}
+#content div {
   grid-area: content;
 }
 @media (min-width: 1024px) {
-  div {
+  #content div {
     padding: 0 30%;
   }
 }
-div #tagline {
+#content div #tagline {
   background-image: linear-gradient(60deg, #5D1676, #C02FF3);
   background-size: 100%;
   -webkit-background-clip: text;
