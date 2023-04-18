@@ -366,13 +366,14 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  list-style-type: none;
 }
 nav ul li {
   margin-left: 4vw;
 }
 nav ul li a:link, nav ul li a:visited {
   font-family: "Open Sans", sans-serif;
-  color: blue;
+  color: #5D1676;
   transition: 0.25s;
   font-size: 1.125rem;
   font-weight: 400;
@@ -400,7 +401,6 @@ header > div aside a {
 }
 header button {
   border: none;
-  border-radius: 25px;
   background-color: #5D1676;
 }
 

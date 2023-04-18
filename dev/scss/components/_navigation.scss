@@ -9,13 +9,15 @@ nav{
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        list-style-type: none;
         
         li{
             margin-left: 4vw;
 
             a:link, a:visited{
                 font-family: "Open Sans", sans-serif;
-                color: blue;
+                color:  #5D1676;
+                
                 transition: 0.25s;
                 font-size: rem-calc(18);
                 font-weight: 400;
