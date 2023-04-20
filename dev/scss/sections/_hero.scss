@@ -7,21 +7,23 @@
         border: none;
         background: none;
     }
-    }
+    
    
-   /* @include xl{
-    display:grid; 
-    grid-template-areas: ". content .";
+   @include xl{
+    display: grid; 
+    grid-template-areas: ". hero .";
     grid-template-columns: auto 1440px auto; 
-    justify-content: center;
-    */
-   >div{
+    //justify-content: center;
+   }
+
+   >div {
         overflow: hidden;
         height: 100%; 
-    @include xl{
+    @include xl { 
     grid-area: hero;
     }
  }
+
 
 article{
     display:flex;
@@ -70,10 +72,12 @@ article{
     
     @include lg{
     font-size: rem-calc(40);
+    margin-top: -15px;
     
     }
 } 
  }
+}
 
     
     

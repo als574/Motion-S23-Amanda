@@ -367,6 +367,7 @@ nav ul {
   justify-content: flex-end;
   align-items: center;
   list-style-type: none;
+  margin: 0;
 }
 nav ul li {
   margin-left: 4vw;
@@ -418,24 +419,23 @@ header button {
   border: none;
   background: none;
 }
-
-/* @include xl{
- display:grid; 
- grid-template-areas: ". content .";
- grid-template-columns: auto 1440px auto; 
- justify-content: center;
- */
-> div {
+@media (min-width: 1200px) {
+  #hero {
+    display: grid;
+    grid-template-areas: ". hero .";
+    grid-template-columns: auto 1440px auto;
+  }
+}
+#hero > div {
   overflow: hidden;
   height: 100%;
 }
 @media (min-width: 1200px) {
-  > div {
+  #hero > div {
     grid-area: hero;
   }
 }
-
-article {
+#hero article {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -445,40 +445,41 @@ article {
   background-position: center;
   background-size: cover;
 }
-article #hero-content {
+#hero article #hero-content {
   color: white;
   text-align: center;
 }
-article #hero-content h1 {
+#hero article #hero-content h1 {
   font-size: 5rem;
   font-weight: 700;
   line-height: 117px;
 }
 @media (min-width: 768px) {
-  article #hero-content h1 {
+  #hero article #hero-content h1 {
     font-size: 5.625rem;
   }
 }
 @media (min-width: 1024px) {
-  article #hero-content h1 {
+  #hero article #hero-content h1 {
     font-size: 6.25rem;
   }
 }
-article h2.shopnow {
+#hero article h2.shopnow {
   font-size: 2rem;
   font-weight: 400;
   line-height: 47px;
   margin-top: -25px;
 }
 @media (min-width: 768px) {
-  article h2.shopnow {
+  #hero article h2.shopnow {
     Font-size: 2.5rem;
     margin-top: -20px;
   }
 }
 @media (min-width: 1024px) {
-  article h2.shopnow {
+  #hero article h2.shopnow {
     font-size: 2.5rem;
+    margin-top: -15px;
   }
 }
 
@@ -487,12 +488,12 @@ article h2.shopnow {
   grid-template-columns: auto 90% auto;
   grid-template-areas: ". content .";
   padding: 64px 0;
-  white-space: nowrap;
   font-family: "Open Sans", sans-serif;
 }
 @media (min-width: 576px) {
   #content {
     padding: 100px 0;
+    justify-content: center;
     grid-template-columns: auto 80% auto;
   }
 }
@@ -509,11 +510,6 @@ article h2.shopnow {
 }
 #content div {
   grid-area: content;
-}
-@media (min-width: 1024px) {
-  #content div {
-    padding: 0 30%;
-  }
 }
 #content div #tagline {
   background-image: linear-gradient(60deg, #5D1676, #C02FF3);

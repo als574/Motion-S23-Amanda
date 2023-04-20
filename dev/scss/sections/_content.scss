@@ -3,11 +3,13 @@
     grid-template-columns: auto 90% auto;
     grid-template-areas: ". content .";
     padding: 64px 0;
-    white-space: nowrap;
+    //white-space: nowrap;
     font-family: "Open Sans", sans-serif;
+    
 
     @include sm{
         padding: 100px 0;
+        justify-content: center;
         grid-template-columns: auto 80% auto;
     }
    @include md{
@@ -23,7 +25,7 @@
 div{
     grid-area: content;
     @include lg{
-        padding:0 30%;
+       //padding:0 30%;
     }
 
 // generic call to h2?
