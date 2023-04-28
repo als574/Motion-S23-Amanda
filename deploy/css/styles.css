@@ -13,10 +13,9 @@ html {
 :root {
   --white: #fff;
   --black: #000;
-  --grey: #EFEEEE;
-  --darkpurple: #5D1676;
-  --medpurple: #8921AD;
-  --lightpurple: #C02FF3;
+  --blue: #1c6ca9;
+  --purple: #A97DA2;
+  --green: #078a28;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -373,24 +372,28 @@ nav ul li {
   margin-left: 4vw;
 }
 nav ul li a:link, nav ul li a:visited {
-  font-family: "Open Sans", sans-serif;
-  color: #5D1676;
+  font-family: "Roboto Slab", serif;
+  color: var(--blue);
   transition: 0.25s;
   font-size: 1.125rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
-  color: #5D1676;
+  color: var(--purple);
 }
 
 /* =============
     Header
 ============= */
+/* =============
+    Header
+============= */
 header {
   position: fixed;
-  background-color: #EFEEEE;
+  background-color: var(--white);
   width: 100%;
-  z-index: 100%;
+  filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.1));
+  z-index: 100;
 }
 header > div {
   display: grid;
@@ -400,122 +403,78 @@ header > div {
 header > div aside a {
   display: inline-block;
 }
-header button {
-  border: none;
-  background-color: #5D1676;
-  border-radius: 8px;
-}
 
 /* =============
     Footer
 ============= */
-#hero {
-  height: 90vh;
-  width: 100%;
-  overflow: hidden;
-  font-family: "Open Sans", sans-serif;
-}
-#hero #shopnowbtn {
-  border: none;
-  background: none;
-}
-@media (min-width: 1200px) {
-  #hero {
-    display: grid;
-    grid-template-areas: ". hero .";
-    grid-template-columns: auto 1440px auto;
-  }
-}
-#hero > div {
-  overflow: hidden;
-  height: 100%;
-}
-@media (min-width: 1200px) {
-  #hero > div {
-    grid-area: hero;
-  }
-}
-#hero article {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
-  width: 100%;
-  background-image: url("../img/hero415.png");
-  background-position: center;
-  background-size: cover;
-}
-#hero article #hero-content {
-  color: white;
-  text-align: center;
-}
-#hero article #hero-content h1 {
-  font-size: 5rem;
-  font-weight: 700;
-  line-height: 117px;
-}
-@media (min-width: 768px) {
-  #hero article #hero-content h1 {
-    font-size: 5.625rem;
-  }
-}
-@media (min-width: 1024px) {
-  #hero article #hero-content h1 {
-    font-size: 6.25rem;
-  }
-}
-#hero article h2.shopnow {
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 47px;
-  margin-top: -25px;
-}
-@media (min-width: 768px) {
-  #hero article h2.shopnow {
-    Font-size: 2.5rem;
-    margin-top: -20px;
-  }
-}
-@media (min-width: 1024px) {
-  #hero article h2.shopnow {
-    font-size: 2.5rem;
-    margin-top: -15px;
-  }
+#wrapper {
+  width: 800px;
+  height: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 100px;
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  line-height: 1.66667rem;
 }
 
-#content {
+#name {
+  color: var(--green);
+}
+
+/*******
+   Quiz
+   *******/
+.innerwrap {
   display: flex;
-  grid-template-columns: auto 90% auto;
-  grid-template-areas: ". content .";
-  padding: 64px 0;
-  font-family: "Open Sans", sans-serif;
+  flex-wrap: wrap;
 }
-@media (min-width: 576px) {
-  #content {
-    padding: 100px 0;
-    justify-content: center;
-    grid-template-columns: auto 80% auto;
-  }
+
+.instructions {
+  background-color: var(--white);
+  padding-bottom: 100px;
 }
-@media (min-width: 768px) {
-  #content {
-    padding: 128px 0;
-    grid-template-columns: auto 80% auto;
-  }
+
+.part {
+  margin-bottom: 3em;
 }
-@media (min-width: 1024px) {
-  #content {
-    grid-template-columns: auto 1440px auto;
-  }
+
+li {
+  margin: 10px;
 }
-#content div {
-  grid-area: content;
+
+.graph {
+  position: relative;
+  width: 400px;
+  height: 350px;
+  background-color: #ccc;
+  background-image: linear-gradient(white 2px, transparent 2px), linear-gradient(90deg, white 2px, transparent 2px), linear-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
+  background-size: 50px 50px, 50px 50px;
+  background-position: -2px -2px, -2px -2px;
 }
-#content div #tagline {
-  background-image: linear-gradient(60deg, #5D1676, #C02FF3);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+
+.box {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+}
+
+.red {
+  background: red;
+  /* this transform must stay */
+  transform: translate(150px, 150px);
+}
+
+.blue {
+  background: blue;
+  /* this transform must stay */
+  transform: translate(200px, 150px);
+}
+
+.green {
+  width: 398px;
+  height: 10px;
+  position: absolute;
+  background: green;
+  bottom: -10px;
 }

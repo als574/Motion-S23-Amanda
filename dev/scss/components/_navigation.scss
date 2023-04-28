@@ -2,30 +2,32 @@
     Navigation
 ============= */
 nav{
+    // border: 1px solid red;
     height:100%;
-
+    
     ul{
+        // border: 1px solid red;
         height:100%;
-        display: flex;
+        display:flex;
         justify-content: flex-end;
         align-items: center;
         list-style-type: none;
-        margin: 0;
-        
+        margin:0;
+
         li{
             margin-left: 4vw;
 
             a:link, a:visited{
-                font-family: "Open Sans", sans-serif;
-                color:  #5D1676;
-                
+                font-family: 'Roboto Slab', serif;
+                color:var(--blue);
                 transition: 0.25s;
                 font-size: rem-calc(18);
-                font-weight: 400;
+                font-weight: 300;
 
                 &:hover, &:active{
-                    color: #5D1676;
+                    color: var(--purple);
                 }
+
             }
         }
     }
