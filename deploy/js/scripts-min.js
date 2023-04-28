@@ -1,0 +1,1 @@
+!function(t){"use strict";t.gsap.timeline({}).add(function(){let e=t.gsap.timeline({});return t.gsap.matchMedia(),e.from(".box red",{duration:1,y:"+=7"}),e}())}(gsap);
