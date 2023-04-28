@@ -37,35 +37,48 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/deploy\/img\/challenge1.gif" : {
-      "ft" : 4194304,
-      "iS" : 135303,
+    "\/deploy\/img\/hero415.png" : {
+      "ft" : 32768,
+      "iS" : 403666,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/challenge1.gif",
+      "oAP" : "\/deploy\/img\/hero415.png",
       "oF" : 0,
-      "opt" : 1,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
       "ou" : "lpckwebp-none",
+      "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/challenge2.gif" : {
-      "ft" : 4194304,
-      "iS" : 360178,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/challenge2.gif",
+    "\/deploy\/img\/Logo412.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/Logo412.svg",
       "oF" : 0,
-      "opt" : 1,
-      "ou" : "lpckwebp-none",
-      "rq" : 75
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
-    "\/deploy\/img\/challenge3.gif" : {
-      "ft" : 4194304,
-      "iS" : 185249,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/challenge3.gif",
+    "\/deploy\/img\/searchicon.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/searchicon.svg",
       "oF" : 0,
-      "opt" : 1,
-      "ou" : "lpckwebp-none",
-      "rq" : 75
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/shoparrow.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/shoparrow.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/deploy\/index.html" : {
       "cB" : 0,
@@ -73,14 +86,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/index.html",
-      "oF" : 0
-    },
-    "\/deploy\/instructions.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/instructions.html",
       "oF" : 0
     },
     "\/deploy\/js\/scripts-min.js" : {
@@ -102,20 +107,12 @@
       "oAP" : "\/dev\/content\/content.html",
       "oF" : 0
     },
-    "\/dev\/content\/instructions-content.kit" : {
+    "\/dev\/content\/hero.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/instructions-content.html",
-      "oF" : 0
-    },
-    "\/dev\/global\/footer.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/dev\/global\/footer.html",
+      "oAP" : "\/dev\/content\/hero.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
@@ -146,7 +143,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/dev\/global\/scripts.html",
       "oF" : 0
     },
@@ -156,14 +153,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/index.html",
-      "oF" : 2
-    },
-    "\/dev\/instructions.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/instructions.html",
       "oF" : 2
     },
     "\/dev\/js\/scripts.js" : {
@@ -342,6 +331,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/dev\/scss\/sections\/_hero.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_hero.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/dev\/scss\/styles.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -356,6 +360,12 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 2,
+      "oAP" : "\/node_modules",
+      "oF" : 0
     },
     "\/package-lock.json" : {
       "ft" : 524288,
@@ -1018,7 +1028,7 @@
         "optionString" : "{'allowParens': true}"
       },
       "no-console" : {
-        "active" : 0,
+        "active" : 1,
         "optionString" : "{'allow': ['warn', 'error']}"
       },
       "no-const-assign" : {
@@ -1919,7 +1929,7 @@
       "moduleType" : 2,
       "removeComments" : 0,
       "sourceMapStyle" : 0,
-      "targetECMAVersion" : 2018
+      "targetECMAVersion" : 0
     },
     "languageDefaultsUserDefined" : [
 
