@@ -4,7 +4,7 @@
     display: grid;
     justify-content: center;
     height: 140vh;
-    width: 100%; // set the height to your desired value
+    width: 100%; 
     grid-template-areas:
       ". image ."
       ". text .";
@@ -22,9 +22,9 @@
     font-size: larger;
     color:  var(--white);
     grid-area: text;
-  display: flex; // enable flexbox on the text element
-  align-items: center; // vertically center the text
-  justify-content: center; // horizontally center the text
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
   padding: 20% 0% 30% 0%;
 }
     
