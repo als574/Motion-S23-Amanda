@@ -14,9 +14,9 @@ html {
   --white: #fff;
   --black: #000;
   --charcoal: #383838;
-  --aqua: #2ee6ef;
-  --yellow: #efe22e;
-  --red: #ef4b2e;
+  --teal: #025E73;
+  --purple: #A54198;
+  --green: #C0BD31;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -369,7 +369,7 @@ textarea {
     Footer
 ============= */
 #section-1 {
-  background-color: var(--aqua);
+  background-color: var(--teal);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -377,13 +377,13 @@ textarea {
 }
 
 #section-2 {
-  background-color: var(--charcoal);
+  background-color: var(--purple);
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/hero.jpg");
-  background-size: cover;
+  background-image: url("../img/ArtImage.png");
+  background-size: 40vh;
 }
 #section-2 #box {
   height: 100px;
@@ -393,7 +393,7 @@ textarea {
 }
 
 #section-3 {
-  background-color: var(--yellow);
+  background-color: var(--green);
   height: 100vh;
   display: flex;
   justify-content: center;
