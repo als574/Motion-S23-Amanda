@@ -1,7 +1,30 @@
 #section-1{
+    padding-top: 5vh;
     background-color: var(--teal);
-    height: 100vh;
-    display: flex;
+    display: grid;
     justify-content: center;
+    height: 140vh;
+    width: 100%; // set the height to your desired value
+    grid-template-areas:
+      ". image ."
+      ". text .";
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    grid-area: image;
     align-items: center;
+  }
+  
+  .text {
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: larger;
+    color:  var(--white);
+    grid-area: text;
+  display: flex; // enable flexbox on the text element
+  align-items: center; // vertically center the text
+  justify-content: center; // horizontally center the text
+  padding: 20% 0% 30% 0%;
 }
+    

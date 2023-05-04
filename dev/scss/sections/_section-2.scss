@@ -8,9 +8,10 @@
     background-size: 40vh;
 
     #box{
-        height: 100px;
-        width: 100px;
-        background-color: var(--red);
-        border: 3px solid var(--white);
+        height: 350px;
+        width: 550px;
+        background-image:url("../img/paintbin.png");
+        size: cover;
+        border: 20px solid var(--purple);
     }
 }

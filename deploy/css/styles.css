@@ -369,11 +369,31 @@ textarea {
     Footer
 ============= */
 #section-1 {
+  padding-top: 5vh;
   background-color: var(--teal);
-  height: 100vh;
-  display: flex;
+  display: grid;
   justify-content: center;
+  height: 140vh;
+  width: 100%;
+  grid-template-areas: ". image ." ". text .";
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  grid-area: image;
   align-items: center;
+}
+
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  color: var(--white);
+  grid-area: text;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20% 0% 30% 0%;
 }
 
 #section-2 {
@@ -386,16 +406,46 @@ textarea {
   background-size: 40vh;
 }
 #section-2 #box {
-  height: 100px;
-  width: 100px;
-  background-color: var(--red);
-  border: 3px solid var(--white);
+  height: 350px;
+  width: 550px;
+  background-image: url("../img/paintbin.png");
+  size: cover;
+  border: 20px solid var(--purple);
 }
 
 #section-3 {
+  font-family: Arial, Helvetica, sans-serif;
   background-color: var(--green);
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  grid-template-columns: auto 90% auto;
+  grid-template-areas: ". content .";
+  padding: 64px 0;
+  font-family: "Open Sans", sans-serif;
+}
+@media (min-width: 576px) {
+  #section-3 {
+    padding: 100px 0;
+    justify-content: center;
+    grid-template-columns: auto 80% auto;
+  }
+}
+@media (min-width: 768px) {
+  #section-3 {
+    padding: 128px 0;
+    grid-template-columns: auto 80% auto;
+  }
+}
+@media (min-width: 1024px) {
+  #section-3 {
+    grid-template-columns: auto 1440px auto;
+  }
+}
+#section-3 h1 {
+  grid-area: content;
+}
+@media (min-width: 1024px) {
+  #section-3 h1 {
+    padding: 0 30%;
+  }
 }
