@@ -74,7 +74,7 @@ function heroAnim(){
                 start:"top 70%",
                 end:"center 80%",
                 scrub:true,
-                markers:true
+                markers:false
             }});
         tl.to("#section-3 h1",{duration:2, rotate:360},"#mission")
       
