@@ -37,6 +37,16 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/img\/found logo1.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/found logo1.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -278,6 +288,12 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/gsap-bonus.tgz",
+      "oF" : 0
+    },
+    "\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 2,
+      "oAP" : "\/node_modules",
       "oF" : 0
     },
     "\/package-lock.json" : {
