@@ -32,7 +32,7 @@
       "co" : 0,
       "ft" : 16,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/deploy\/css\/styles-min.css",
       "oF" : 0,
       "pg" : 0
@@ -41,7 +41,7 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/deploy\/index.html",
       "oF" : 0
     },
@@ -50,7 +50,7 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/deploy\/js\/scripts-min-min.js",
       "oF" : 0,
       "sC" : 3,
@@ -339,7 +339,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-glace",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 704325901.50510299
+    "lastBuiltDate" : 707767353.75954795
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,

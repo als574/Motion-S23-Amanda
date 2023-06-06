@@ -11,7 +11,7 @@ function opacityAnimation() {
   let tl = gsap.timeline();
 
   //tl.fromTo("#foundlogo", { opacity: 0, duration: 0.5 }, { opacity: 1, duration: 0.5 });
-    tl.to("#foundlogo", { autoAlpha:0 });
+  tl.to("#content", { autoAlpha:0, duration:0.5, x:"=-40" });
   return tl;
 }
 
