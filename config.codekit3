@@ -4,11 +4,27 @@
     {
       "name" : "Process All Remaining Files and Folders",
       "stepType" : 1,
-      "uuidString" : "2D98CC5F-45F9-46F2-8AEF-2F553619B0BE"
+      "uuidString" : "2BB204BD-FCD9-43ED-816A-B39A2306E9E0"
     }
   ],
-  "creatorBuild" : "34434",
+  "creatorBuild" : "34472",
   "files" : {
+    "\/.gitattributes" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/.gitattributes",
+      "oF" : 0
+    },
+    "\/.vscode\/settings.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/.vscode\/settings-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -40,12 +56,32 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/global\/footer.kit" : {
+    "\/design\/tekni-logo-update.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/design\/tekni-logo-update.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/design\/tekni-logo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/design\/tekni-logo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/dev\/content\/content.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/global\/footer.html",
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/content.html",
       "oF" : 0
     },
     "\/dev\/global\/head.kit" : {
@@ -54,14 +90,6 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/global\/head.html",
-      "oF" : 0
-    },
-    "\/dev\/global\/header.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/global\/header.html",
       "oF" : 0
     },
     "\/dev\/global\/scripts.kit" : {
@@ -81,7 +109,7 @@
       "oF" : 2
     },
     "\/dev\/js\/scripts.js" : {
-      "bF" : 0,
+      "bF" : 4,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
@@ -241,6 +269,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/dev\/scss\/sections\/_content.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_content.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/dev\/scss\/styles.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -256,21 +299,24 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/package-lock.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/package-lock-min.json",
+    "\/README.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/README.html",
       "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/package.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/package-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
     }
   },
   "hooks" : [
@@ -280,11 +326,12 @@
 
   },
   "projectAttributes" : {
-    "creationDate" : 669227926.75338697,
-    "displayValue" : "Motion-F22-PM",
+    "creationDate" : 649104598.99548197,
+    "displayValue" : "Motion-S23-Amanda",
     "displayValueWasSetByUser" : 0,
-    "iconImageName" : "brackets-ucla",
-    "iconImageWasSetByUser" : 0
+    "iconImageName" : "brackets-glace",
+    "iconImageWasSetByUser" : 0,
+    "lastBuiltDate" : 704325901.50510299
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -644,7 +691,7 @@
       },
       "class-methods-use-this" : {
         "active" : 0,
-        "optionString" : "{'exceptMethods': [], 'enforceForClassFields': true}"
+        "optionString" : "{'exceptMethods': []}"
       },
       "comma-dangle" : {
         "active" : 1,
@@ -800,9 +847,13 @@
         "active" : 0,
         "optionString" : "'always', {exceptAfterSingleLine: false}"
       },
+      "logical-assignment-operators" : {
+        "active" : 0,
+        "optionString" : "'always',  {'enforceForIfStatements': false}"
+      },
       "max-classes-per-file" : {
         "active" : 0,
-        "optionString" : "{'ignoreExpressions': false, 'max': 1}"
+        "optionString" : "1"
       },
       "max-depth" : {
         "active" : 0,
@@ -960,6 +1011,9 @@
       "no-empty-pattern" : {
         "active" : 1
       },
+      "no-empty-static-block" : {
+        "active" : 0
+      },
       "no-eq-null" : {
         "active" : 0
       },
@@ -1006,7 +1060,7 @@
       },
       "no-implicit-coercion" : {
         "active" : 0,
-        "optionString" : "{'boolean': true, 'number': true, 'string': true, 'disallowTemplateShorthand': false, 'allow': []}"
+        "optionString" : "{'boolean': true, 'number': true, 'string': true, 'allow': []}"
       },
       "no-implicit-globals" : {
         "active" : 0
@@ -1056,7 +1110,7 @@
         "active" : 0
       },
       "no-loss-of-precision" : {
-        "active" : 1
+        "active" : 0
       },
       "no-magic-numbers" : {
         "active" : 0,
@@ -1100,6 +1154,9 @@
       "no-new-func" : {
         "active" : 0
       },
+      "no-new-native-nonconstructor" : {
+        "active" : 0
+      },
       "no-new-object" : {
         "active" : 0
       },
@@ -1110,7 +1167,7 @@
         "active" : 0
       },
       "no-nonoctal-decimal-escape" : {
-        "active" : 1
+        "active" : 0
       },
       "no-obj-calls" : {
         "active" : 1
@@ -1258,7 +1315,7 @@
         "optionString" : "{'enforceForOrderingRelations': false}"
       },
       "no-unsafe-optional-chaining" : {
-        "active" : 1,
+        "active" : 0,
         "optionString" : "{'disallowArithmeticOperators': false}"
       },
       "no-unused-expressions" : {
@@ -1280,7 +1337,7 @@
         "optionString" : "{'functions': true, 'classes': true, 'variables': true}"
       },
       "no-useless-backreference" : {
-        "active" : 1
+        "active" : 0
       },
       "no-useless-call" : {
         "active" : 0
@@ -1788,7 +1845,7 @@
       "moduleType" : 2,
       "removeComments" : 0,
       "sourceMapStyle" : 0,
-      "targetECMAVersion" : 0
+      "targetECMAVersion" : 2018
     },
     "languageDefaultsUserDefined" : [
 
@@ -1840,6 +1897,7 @@
       "ENVIRONMENT:::$NODE_ENV"
     ],
     "rollupTreeshakingEnabled" : 1,
+    "rollupTreeshakingModuleSideEffects" : 1,
     "skippedFoldersString" : "log, _logs, logs, _cache, cache, .idea, \/storage\/framework\/sessions, node_modules",
     "sourceFolderName" : "source",
     "susyVersion" : 3,
@@ -1914,7 +1972,7 @@
       },
       "comments" : {
         "active" : 0,
-        "flagValue" : -1
+        "flagValue" : 1
       },
       "comparisons" : {
         "active" : 1,
