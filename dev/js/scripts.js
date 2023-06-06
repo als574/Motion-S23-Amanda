@@ -1,19 +1,21 @@
 import { gsap } from "gsap";
-import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
-import { GSDevTools } from "gsap/GSDevTools";
+import { MotionPathPlugin } from "gsap/dist/MotionPathPlugin"; // Update the file path
+import { DrawSVGPlugin } from "gsap/dist/DrawSVGPlugin"; // Update the file path
+import { GSDevTools } from "gsap/dist/GSDevTools"; // Update the file path
 
 gsap.registerPlugin(MotionPathPlugin, DrawSVGPlugin, GSDevTools);
+gsap.set("#foundlogo", { autoAlpha: 0 });
 
-// function tAnimation(){
-//     let tl = gsap.timeline();
+function opacityAnimation() {
+  let tl = gsap.timeline();
 
+  tl.fromTo("#foundlogo", { opacity: 0, duration: 0.5 }, { opacity: 1, duration: 0.5 });
 
-//     return tl;
-// }
+  return tl;
+}
 
+let mainTL = gsap.timeline();
+mainTL.add(opacityAnimation());
 
-// let mainTl = gsap.timeline();
-// mainTl.add(tAnimation())
-// .add(eAnimation(), "-=0.25")
 GSDevTools.create();
+
