@@ -406,9 +406,6 @@ textarea {
   justify-content: center;
   align-items: center;
 }
-#content > div #logo, #content > div #shape1, #content > div #shape2, #content > div #shape3, #content > div #shape4, #content > div #scenario4, #content > div #mask {
+#content > div #logo, #content > div #shape2, #content > div #shape3, #content > div #shape4, #content > div #scenario4, #content > div #mask {
   visibility: hidden;
-}
-#content > div #nblue1 {
-  visibility: visible;
 }
