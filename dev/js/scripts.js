@@ -56,7 +56,7 @@ function yellow(){
     let tl = gsap.timeline();
   
     tl.from("#orange1", {visibility:"hidden", fill:"#CD4225"})
-    .from("#orange1", {duration:0.75, scale:"0.005"},"=+0.15")//scale and position not correct!
+    .from("#orange1", {duration:0.75, scale:0.005},"=+0.15")//scale and position not correct!
     .to("#orange", {visibility: "visible"})
     .to("#orange1", {duration: 2, scale: 1.1, rotate:60, x: "+=450%", y: "-=100%"});
   
@@ -67,7 +67,7 @@ function yellow(){
     let tl = gsap.timeline();
   
     tl.from("#green1", {visibility:"hidden", fill:"#CD4225"})
-    .from("#green1", {duration:0.75, scale:"0.25"},"+=0.20")//scale and position not correct!
+    .from("#green1", {duration:0.75, scale:0.25},"+=0.20")//scale and position not correct!
     .to("#green1", {visibility: "visible"})
     .to("#green1", {duration: 2, scale: 1.25, rotate:60, x: "+=450%", y: "-=100%"});
   

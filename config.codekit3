@@ -64,11 +64,11 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/design\/found logo.svg" : {
+    "\/design\/PILogo1.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/design\/found logo.svg",
+      "oAP" : "\/design\/PILogo1.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -367,7 +367,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-glace",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 707767353.75954795
+    "lastBuiltDate" : 707910751.89829004
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
