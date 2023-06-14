@@ -6,11 +6,20 @@ import { GSDevTools } from "gsap/GSDevTools";
 gsap.registerPlugin(DrawSVGPlugin, GSDevTools); //MotionPathPlugin,
 let mainTL= gsap.timeline();
 
+function opac(){
+  let tl = gsap.timeline();
+  
+  tl.set("#logo", {duration:1.5, visibility:"visible", autoAlpha:1})
+    .to("#logo", {duration:1, autoAlpha:0,yoyo:true, ease: "logo".easeNone})
+    tl.set("#logo", {visibility:"hidden"});
+  
+  return tl;
+}
 function nBlue(){
 let tl = gsap.timeline();
 
   tl.from("#nblue1", {visibility:"hidden", fill: "#2C344C"})
-  .from("#nblue1", {duration:1, scale:"0.25"})
+  .from("#nblue1", {duration:1, scale:0.25})
   .to("#nblue1", {visibility: "visible"})
   .to("#nblue1", {duration: 2, scale: 1.25, rotate:-60, x: "-=450%", y: "-=100%"});
 
@@ -21,7 +30,7 @@ function red(){
   let tl = gsap.timeline();
 
   tl.from("#red1", {visibility:"hidden", fill:"#CD4225", transformOrigin:"50% 50%"})
-  .from("#red1", {duration:0.75, scale:"0.005"})//scale and position not correct!
+  .from("#red1", {duration:0.75, scale:0.005})//scale and position not correct!
   .to("#red1", {visibility: "visible"})
   .to("#red1", {duration: 2, scale: 1.005, rotate:60, x: "+=450%", y: "-=100%"});
 
@@ -44,7 +53,7 @@ function yellow(){
     let tl = gsap.timeline();
   
     tl.from("#lblue1", {visibility:"hidden", fill:"#CD4225", transformOrigin:"50% 50%"})
-    .from("#lblue1", {duration:0.75, scale:"0.005"})//scale and position not correct!
+    .from("#lblue1", {duration:0.75, scale:0.005})//scale and position not correct!
     .to("#lblue1", {visibility: "visible"})
     .to("#lblue1", {duration: 2, scale: 1.75, rotate:60, x: "+=450%", y: "+=400%"});
   
@@ -56,7 +65,7 @@ function yellow(){
     let tl = gsap.timeline();
   
     tl.from("#orange1", {visibility:"hidden", fill:"#CD4225"})
-    .from("#orange1", {duration:0.75, scale:0.005},"=+0.15")//scale and position not correct!
+    .to("#orange1", {duration:0.75, scale:1.5},"=+0.15")//scale and position not correct!
     .to("#orange", {visibility: "visible"})
     .to("#orange1", {duration: 2, scale: 1.1, rotate:60, x: "+=450%", y: "-=100%"});
   
@@ -77,12 +86,13 @@ function yellow(){
 
 GSDevTools.create();
 
-mainTL.add(red(),0) 
-  .add(nBlue(), 0)
-  .add(yellow(), 0)
-  .add(orange(), 0)
-  .add(green(), 0)
-  .add(lBlue(), 0)
+mainTL.add(opac()) 
+  .add(red(),"scaleup") 
+  .add(nBlue(),"scaleup")
+  .add(yellow(),"scaleup")
+  .add(orange(),"scaleup")
+  .add(green(),"scaleup")
+  .add(lBlue(),"scaleup")
   ;
 
 
