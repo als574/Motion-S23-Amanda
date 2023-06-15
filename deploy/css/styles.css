@@ -409,3 +409,6 @@ textarea {
 #content > div #logo, #content > div #shape2, #content > div #shape3, #content > div #shape4, #content > div #scenario4, #content > div #mask {
   visibility: hidden;
 }
+#content > div #logo #mask, #content > div #shape2 #mask, #content > div #shape3 #mask, #content > div #shape4 #mask, #content > div #scenario4 #mask, #content > div #mask #mask {
+  color: white;
+}

@@ -37,46 +37,103 @@ function red() {
     .to("#red1", {visibility: "visible"})
     .to("#red1", {duration: 0.5, rotate: -90})
     .to("#red1", {duration: 2, scale: 0, x: "+=450%", y: "-=225%"});
-  
+    
   return tl;
 }
-
 function yellow() {
   let tl = gsap.timeline();
 
-    tl.set("#yellow1", {opacity: 0.85})
-    .from("#yellow1", { visibility: "hidden", fill: "#2C344C" },"+=0.05")
+  tl.set("#yellow1", { opacity: 0.85 })
+    .from("#yellow1", { visibility: "hidden", fill: "#2C344C" }, "+=0.05")
     .from("#yellow1", { duration: 1.5, scale: 0.05 })
     .to("#yellow1", { visibility: "visible" })
-    .to("#yellow1", {duration: 2, scale: 1.75, rotate:38, x: "-=250%", y: "-=175%"},"<")
-    .to("#yellow1", {duration:1, morphSVG:"yellow3"});
-   //!!!!! .to("#yellow3", { visibility: "visible" })
+    .to("#yellow1", { duration: 2, scale: 1.75, rotate: 38, x: "-=175%", y: "-=125%" }, "<")
+    .to("#yellow1", { duration: 0.75, x: "+=85%", y: "+=85%" })
+    .to("#yellow1", { duration: 1, morphSVG: "#yellow3" })
+    .to("#yellow1", { duration: 1.5, rotate: -5, x: "+=110%", y: "-=70%" })
+    .to("#yellow1", { duration: 3, morphSVG: "#yellow4", x: "+=2%", y: "-=2%" });
+
   return tl;
 }
+// function yellow() {
+//   let tl = gsap.timeline();
 
+//   tl.set("#yellow1", { opacity: 0.85 })
+//     .from("#yellow1", { visibility: "hidden", fill: "#2C344C" }, "+=0.05")
+//     .from("#yellow1", { duration: 1.5, scale: 0.05 })
+//     .to("#yellow1", { visibility: "visible" })
+//     .to("#yellow1", { duration: 2, scale: 1.75, rotate: 38, x: "-=225%", y: "-=175%" }, "<")
+//     .to("#yellow1", { duration: 0.75, x:"+=110%", y: "+=110%" })
+//     .to("#yellow1", { duration: 1, morphSVG: "#yellow3" }) 
+//     .to("#yellow1", { duration: 1.5, rotate: -5, x:"+=130%", y: "-=90%" })
+//     .to("#yellow1", { duration: 3, morphSVG: "#yellow4",  x:"+=2%", y: "-=2%" });
+//     //.to("#yellow1", { visibility: "hidden" }) 
+//     //.from("#yellow3", { visibility: "hidden" })
+//     //.to("#yellow3", { visibility: "visible" });
+//     return tl;
+//   }
+// function yellow() {
+//   let tl = gsap.timeline();
+
+//     tl.set("#yellow1", {opacity: 0.85})
+//     .from("#yellow1", { visibility: "hidden", fill: "#2C344C" },"+=0.05")
+//     //.from("#yellow3", { visibility: "hidden", fill: "#2C344C" })
+//     .from("#yellow1", { duration: 1.5, scale: 0.05 })
+//     .to("#yellow1", { visibility: "visible" })
+//     .to("#yellow1", {duration: 2, scale: 1.75, rotate:38, x: "-=250%", y: "-=175%"},"<")
+//     .to("#yellow1", {duration: 0.5, y: "+=110%"})
+//     .to("#yellow1", {duration:1, morphSVG:"yellow3"})
+//     .to("#yellow3", { visibility: "visible" });
+    
+//   return tl;
+// }
 function lBlue() {
   let tl = gsap.timeline();
 
-  tl.set("#lblue1", {opacity: 0.85})
-    .from("#lblue1", {visibility: "hidden",  fill: "#CD4225", transformOrigin: "50% 50%"},"+=0.15")
-    .from("#lblue1", {duration: 1.5, scale: 0.15, x: "-=152%", y: "-=60%"})
+  tl.set("#lblue1", { opacity: 0.85 })
+    .from("#lblue1", { visibility: "hidden", fill: "#CD4225", transformOrigin: "50% 50%" }, "+=0.15")
+    .from("#lblue1", { duration: 1.5, scale: 0.15, x: "-=152%", y: "-=60%" })
     .to("#lblue1", { visibility: "visible" })
-    .to("#lblue1", {duration: 2, scale: 2, rotate:-30, x: "+=130%", y: "+=125%"},"<");
+    .to("#lblue1", { duration: 1, scale: 2, rotate: -30, x: "+=25%", y: "+=35%" }, "<")
+    .to("#lblue1", { duration: 2.5, morphSVG: "#lblue3", rotate: 5, y: "-=75%" })
+    .to("#lblue1", { duration: 1, x: "-=30%", y: "-=30%" })
+    .to("#lblue1", { duration: 3, morphSVG: "#lblue4", rotate: 4,  x: "+=250%", y: "+=200%"});
 
-    return tl;
-  }
+  return tl;
+}
+// function lBlue() {
+//   let tl = gsap.timeline();
 
-  function orange(){
-    let tl = gsap.timeline();
-  
-    tl.set("#orange1", {opacity: 0.85, scale: 0})
-    .from("#orange1", {visibility:"hidden", fill:"#CD4225"})
-    //.from("#lblue1", {duration: 1, scale: 0})
-    .to("#orange", {visibility: "visible"})
-    .to("#orange1", {duration: 3, scale: 7, rotate:60, x: "+=450%", y: "-=300%"});
-    return tl;
-  }
-  
+//   tl.set("#lblue1", {opacity: 0.85})
+//     .from("#lblue1", {visibility: "hidden",  fill: "#CD4225", transformOrigin: "50% 50%"},"+=0.15")
+//     .from("#lblue1", {duration: 1.5, scale: 0.15, x: "-=152%", y: "-=60%"})
+//     .to("#lblue1", { visibility: "visible" })
+//     .to("#lblue1", {duration: 2, scale: 2, rotate:-30, x: "+=130%", y: "+=125%"},"<")
+//     .to("#lblue1", { duration: 1, morphSVG: "#lblue3", rotate:5, y: "-=125%"  })
+//     .to("#lblue1", { duration: 1, x: "-=100%", y: "-=100%"})
+//     .to("#lblue1", { duration: 3,  morphSVG: "#lblue4"});
+    
+
+
+//     return tl;
+//   }
+
+function orange() {
+  let tl = gsap.timeline();
+
+  tl.set("#orange1", { opacity: 0.85, scale: 0 })
+    .from("#orange1", { visibility: "hidden", fill: "#CD4225" })
+    .to("#orange1", { visibility: "visible" })
+    .to("#orange1", { duration: 3, scale: 7, rotate: 60, x: "+=600%", y: "-=650%" })
+    .to("#orange1", { duration: 1, scaleY: "10" })
+    .to("#orange1", { duration: 1.5, x: "-=800%", y: "+=780%" }) 
+    .to("#orange1", { duration: 1, scale: 6},"same")
+    .to("#orange1", {duration: 3.5, x: "-=2350%", y: "-=450%"},"same")
+
+   // .to("#orange1", { duration: 1, morphSVG: "#orange3" })
+    
+  return tl;
+}
   function green(){
     let tl = gsap.timeline();
   
@@ -91,6 +148,33 @@ function lBlue() {
   
     return tl;
   }
+  function hideShow(){
+    let tl = gsap.timeline();
+    tl.to("#orange1", {duration:0.5,x:"+=125",y:"+=150"},"mvdown")
+    .to("#yellow1", {duration:0.5,x:"+=125",y:"+=150"},"mvdown")
+    .to("#lblue1", {duration:0.5,x:"+=125",y:"+=150"},"mvdown")
+    .to("#orange1", {visibility: "hidden"},"time")
+    .to("#yellow1", {visibility: "hidden"},"time")
+    .to("#lblue1", {visibility: "hidden"},"time")
+    
+     
+    .to("#shape4", {visibility: "visible"});
+  
+    return tl;
+  }
+  function mask(){
+    let tl = gsap.timeline();
+    tl.from("#mask", {visibility:"hidden"})
+    tl.to("#mask", {visibility:"visible",scaleX:2})
+    tl.from("#scenario4", {visibility:"hidden"});
+    tl.from("#scenario4", {visibility:"visible", opacity:0, duration: 1, x:"+=80%"});
+    
+
+
+  
+  
+    return tl;
+  }
 
 GSDevTools.create();
 
@@ -101,6 +185,8 @@ mainTL.add(opac())
   .add(orange(),"scaleup")
   .add(green(),"scaleup")
   .add(lBlue(),"scaleup")
+  .add(hideShow())
+  .add(mask())
   ;
 
 //------------------------------

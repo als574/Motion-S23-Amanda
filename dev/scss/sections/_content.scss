@@ -22,8 +22,11 @@
         }
         #logo, #shape2, #shape3, #shape4, #scenario4, #mask{
             visibility: hidden;
+            #mask{
+                color: white;
+               }
 
         }
-        
+       
     }
 }
