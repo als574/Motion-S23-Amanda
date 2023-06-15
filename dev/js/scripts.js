@@ -76,10 +76,12 @@ function lBlue() {
   function green(){
     let tl = gsap.timeline();
   
-    tl.from("#green1", {visibility:"hidden", fill:"#CD4225"})
-    .from("#green1", {duration:0.75, scale:0.25},"+=0.20")//scale and position not correct!
+    tl.set("#green1", {scale: 0})
+    .from("#green1", {visibility:"hidden", fill:"#CD4225"})
+    //.from("#green1", {duration:0.75, scale:0.10},"+=0.20")
     .to("#green1", {visibility: "visible"})
-    .to("#green1", {duration: 2, scale: 1.25, rotate:60, x: "+=450%", y: "-=100%"});
+    .to("#green1", {duration: 1, scale: 2})
+    .to("#green1", {duration: 1, rotate:45, y: "-=200%"});
   
   
     return tl;
@@ -130,4 +132,4 @@ mainTL.add(opac())
 
 // GSDevTools.create();
 
-// mainTL.add(red()).add(nBlue(), 0);
+// mainTL.add(red()).add(nBlue(), 0); benis
