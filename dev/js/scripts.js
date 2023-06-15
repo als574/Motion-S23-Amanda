@@ -1,9 +1,10 @@
 import { gsap } from "gsap";
 //import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
+import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 import { GSDevTools } from "gsap/GSDevTools";
 
-gsap.registerPlugin(DrawSVGPlugin, GSDevTools); //MotionPathPlugin,
+gsap.registerPlugin(DrawSVGPlugin, MorphSVGPlugin, GSDevTools); //MotionPathPlugin,
 let mainTL= gsap.timeline();
 
 function opac() {
@@ -47,8 +48,9 @@ function yellow() {
     .from("#yellow1", { visibility: "hidden", fill: "#2C344C" },"+=0.05")
     .from("#yellow1", { duration: 1.5, scale: 0.05 })
     .to("#yellow1", { visibility: "visible" })
-    .to("#yellow1", {duration: 2, scale: 1.75, rotate:38, x: "-=250%", y: "-=175%"},"<");
-
+    .to("#yellow1", {duration: 2, scale: 1.75, rotate:38, x: "-=250%", y: "-=175%"},"<")
+    .to("#yellow1", {duration:1, morphSVG:"yellow3"});
+   //!!!!! .to("#yellow3", { visibility: "visible" })
   return tl;
 }
 
@@ -57,7 +59,7 @@ function lBlue() {
 
   tl.set("#lblue1", {opacity: 0.85})
     .from("#lblue1", {visibility: "hidden",  fill: "#CD4225", transformOrigin: "50% 50%"},"+=0.15")
-    .from("#lblue1", {duration: 1.5, opacity: 0.5,scale: 0.15, x: "-=152%", y: "-=60%"})
+    .from("#lblue1", {duration: 1.5, scale: 0.15, x: "-=152%", y: "-=60%"})
     .to("#lblue1", { visibility: "visible" })
     .to("#lblue1", {duration: 2, scale: 2, rotate:-30, x: "+=130%", y: "+=125%"},"<");
 
@@ -67,9 +69,11 @@ function lBlue() {
   function orange(){
     let tl = gsap.timeline();
   
-    tl.from("#orange1", {visibility:"hidden", fill:"#CD4225"})
+    tl.set("#orange1", {opacity: 0.85, scale: 0})
+    .from("#orange1", {visibility:"hidden", fill:"#CD4225"})
+    //.from("#lblue1", {duration: 1, scale: 0})
     .to("#orange", {visibility: "visible"})
-    .to("#orange1", {duration: 2, scale: 4, rotate:60, x: "+=450%", y: "-=100%"});
+    .to("#orange1", {duration: 3, scale: 7, rotate:60, x: "+=450%", y: "-=300%"});
     return tl;
   }
   
@@ -81,7 +85,8 @@ function lBlue() {
     //.from("#green1", {duration:0.75, scale:0.10},"+=0.20")
     .to("#green1", {visibility: "visible"})
     .to("#green1", {duration: 1, scale: 2})
-    .to("#green1", {duration: 1, rotate:45, y: "-=200%"});
+    .to("#green1", {duration: 1, rotate:35, y: "-=200%"})
+    .to("#green1", {duration: 1,y: "-=200%"});
   
   
     return tl;
@@ -132,4 +137,4 @@ mainTL.add(opac())
 
 // GSDevTools.create();
 
-// mainTL.add(red()).add(nBlue(), 0); benis
+// mainTL.add(red()).add(nBlue(), 0); 
